@@ -82,7 +82,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 ---
 
 ## Lisensi  
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).  
+Proyek ini dilisensikan sebagian [Public License](https://github.com/Archana-Berry-OS/lisensi/blob/main/README.md).  
 
 ---
 
