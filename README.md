@@ -1,12 +1,16 @@
 # Archana Berry OS  
 **Proyek sistem operasi hobi berbasis Unix Kustom (Unix-Like) yang ringan, fleksibel, terintegrasi, dan modularitas tinggi.**  
 
-![Logo Archana Berry OS](https://github.com/Archana-Berry-OS/resources/logo.png)  
+![Logo Archana Berry OS](https://github.com/Archana-Berry-OS/assets/logo.png)  
+
+---
+## Proyek masih tahap pengembangan.
+---
 
 ---
 
 ## Deskripsi  
-**Archana Berry OS** adalah sistem operasi modern yang dirancang untuk memberikan efisiensi tinggi dengan fitur-fitur unggulan yang cocok untuk berbagai kebutuhan seperti profesional, gaming, server hosting, hingga penggunaan sehari-hari.  
+**Archana Berry OS** adalah sistem operasi modern yang dirancang untuk memberikan efisiensi tinggi dan performa tinggi dengan fitur-fitur unggulan yang cocok untuk berbagai kebutuhan seperti profesional, kantor, konten kreator, gaming, server hosting, hingga penggunaan sehari-hari.  
 
 Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, serta menghadirkan pendekatan baru dalam manajemen sistem dan aplikasi, jauh berbeda dibandingkan OS tradisional seperti Windows, Linux, atau macOS.  
 
@@ -49,7 +53,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 ## Kebutuhan Sistem  
 - Prosesor: Minimal ARM atau x86_64  
 - RAM: Minimal 1 GB (Direkomendasikan 2 GB untuk performa optimal)  
-- Penyimpanan: 2 GB untuk sistem dasar  
+- Penyimpanan: Minimal 10 GB untuk sistem dasar  
 
 ---
 
@@ -60,10 +64,10 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
    ```  
 2. Ikuti instruksi di dokumen `INSTALL.md`.  
 
+3. Jalankan pakai mesin virtual atau nyata (actual machine).
 ---
 
 ## Kontributor  
-- **Afrizal Syahreza** (Admin Kedua dan Kontributor Utama)  
 - **Archana Berry** (Pendiri dan Pengembang Utama)  
 
 ---
