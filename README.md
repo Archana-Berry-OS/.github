@@ -10,8 +10,6 @@
 
 Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, serta menghadirkan pendekatan baru dalam manajemen sistem dan aplikasi, jauh berbeda dibandingkan OS tradisional seperti Windows, Linux, atau macOS.  
 
-Proyek ini dikelola oleh tim berbakat, dengan **Afrizal Syahreza** sebagai kontributor utama kedua.
-
 ---
 
 ## Fitur Utama  
