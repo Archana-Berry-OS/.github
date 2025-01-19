@@ -1,7 +1,7 @@
 # Archana Berry OS  
 **Proyek sistem operasi hobi berbasis Unix Kustom (Unix-Like) yang ringan, fleksibel, terintegrasi, dan modularitas tinggi.** 
 
-![Logo Archana Berry Organization](https://raw.githubusercontent.com/Archana-Berry-OS/.github/main/profile/orglogo.png)
+<img src="https://raw.githubusercontent.com/Archana-Berry-OS/.github/main/profile/orglogo.png" alt="Logo Archana Berry Organization" width="500" />
 ![Logo Archana Berry OS](https://raw.githubusercontent.com/Archana-Berry-OS/.github/main/profile/oslogo.png)
 
 ---
