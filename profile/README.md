@@ -54,6 +54,8 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 - **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV.  
 - **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan perlatan konmten kreator.
 - **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.
+- **Recovery**: Mempermudah pemulihan jika oOS kesulitan masuk karena masalah kritis.
+- **PSOD**: "Purple Screen Of Dead" Untuk mempermudah analisa kesalahan OS dengan GUI Framebuffer dan kode QR dmesg.
 
 ---
 
