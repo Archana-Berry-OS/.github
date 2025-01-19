@@ -34,17 +34,17 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery.  
 
 - **Custom Library Formats**  
-  - `.abdll`, `.absll`, `.abl`, dll, menghadirkan modularitas unik dengan performa optimal.  
+  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.  
 
 - **Dukungan Gaming**  
-  Archana Berry OS dirancang agar porting game dan aplikasi berbasis grafis menjadi lebih mudah.  
+  Archana Berry OS dirancang agar porting game, editing, dan aplikasi berbasis grafis menjadi lebih mudah.  
 
 ---
 
 ## Kelebihan  
 - **Minimalis dan Cepat**: Tanpa layanan rumit seperti banyak distribusi Linux.  
 - **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV.  
-- **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan AI Asisten di masa depan.  
+- **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan perlatan konmten kreator.
 - **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.  
 
 ---
