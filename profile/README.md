@@ -25,7 +25,8 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 - **Bahasa Pemrograman Modern**  
   Dibangun menggunakan **Rust** untuk keamanan dan kecepatan, serta mendukung berbagai bahasa pemrograman (C, C++, Rust, bahkan Java/Kotlin, Swift, dll).  
 
-- **Sistem Berkas yang Terorganisir**  
+- **Sistem Berkas yang Terorganisir**
+  - `/sbin` untuk program aplikasi sistem biner nya beserta dengan CoreUtils nya Archana Berry.
   - `/archanaberry/` untuk layanan inti dan pengguna root sistem.  
   - `/home/(user)/` untuk pengguna, memastikan isolasi yang aman antar user.  
   - `/system/develop/` mendukung pengembang dengan library header C/C++/Rust bawaan.
@@ -33,6 +34,8 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `/system/driver` untuk kumpulan driver khusus Archana Berry (.abd).
   - `/lib` untuk kumpulan library dengan format kustom untuk Archana Berry.
   - `/system/app` untuk kumpulan aplikasi sistem bawaan GUI (.abp)
+  - `/system/preference` untuk personalisasi tampilan nya Archana Berry.
+  - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
 
 - **Dukungan Multibahasa**  
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
@@ -46,10 +49,11 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 ---
 
 ## Kelebihan  
-- **Minimalis dan Cepat**: Tanpa layanan rumit seperti banyak distribusi Linux.  
+- **Minimalis dan Cepat**: Tanpa layanan rumit seperti banyak distribusi Linux.
+- **Modular**: Bisa menambahkan/mengurangi modul secara internal maupun eksternal dengan mudah.
 - **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV.  
 - **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan perlatan konmten kreator.
-- **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.  
+- **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.
 
 ---
 
