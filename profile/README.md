@@ -17,21 +17,25 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 ## Fitur Utama  
 - **Manajemen File dan Aplikasi yang Modular**  
-  Archana Berry OS menggunakan format **ABP** (Archana Berry Package) dan **ABPI** (installer), memudahkan pengguna dalam mengelola aplikasi dengan GUI maupun terminal.  
+  Archana Berry OS menggunakan format **ABP** (Archana Berry Package) dan **ABPI** (Installer), memudahkan pengguna dalam mengelola aplikasi dengan GUI maupun terminal dan **XABP** (Cross Archana Berry Program) fleksibel pengembangan pakai bahasa pemprograman non native.
 
 - **Fokus pada Efisiensi dan Performa Tinggi**  
-  Dengan memanfaatkan *memory management* yang optimal, OS ini sangat cocok untuk gaming dan profesional.  
+  Dengan memanfaatkan *memory management* yang optimal, OS ini sangat cocok untuk. daily driver, gaming dan profesional.  
 
 - **Bahasa Pemrograman Modern**  
   Dibangun menggunakan **Rust** untuk keamanan dan kecepatan, serta mendukung berbagai bahasa pemrograman (C, C++, Rust, bahkan Java/Kotlin, Swift, dll).  
 
 - **Sistem Berkas yang Terorganisir**  
-  - `/archanaberry/` untuk layanan inti sistem.  
+  - `/archanaberry/` untuk layanan inti dan pengguna root sistem.  
   - `/home/(user)/` untuk pengguna, memastikan isolasi yang aman antar user.  
-  - `/system/develop/` mendukung pengembang dengan library header C/C++/Rust bawaan.  
+  - `/system/develop/` mendukung pengembang dengan library header C/C++/Rust bawaan.
+  - `/system/base` untuk rollback dan cadangan sumber kode os dalam bentuk .abb (Archana Berry Backup file).
+  - `/system/driver` untuk kumpulan driver khusus Archana Berry (.abd).
+  - `/lib` untuk kumpulan library dengan format kustom untuk Archana Berry.
+  - `/system/app` untuk kumpulan aplikasi sistem bawaan GUI (.abp)
 
 - **Dukungan Multibahasa**  
-  Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery.  
+  Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
 
 - **Custom Library Formats**  
   - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.  
@@ -50,7 +54,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 ---
 
 ## Kebutuhan Sistem  
-- Prosesor: Minimal ARM atau x86_64  
+- Prosesor: Minimal ARM atau x86_64 (Mendukung 32bit dan 64bit)
 - RAM: Minimal 1 GB (Direkomendasikan 2 GB untuk performa optimal)  
 - Penyimpanan: Minimal 10 GB untuk sistem dasar  
 
