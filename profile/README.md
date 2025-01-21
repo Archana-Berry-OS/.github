@@ -28,6 +28,8 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 - **Sistem Berkas yang Terorganisir**
   - `/sbin` untuk program aplikasi sistem biner nya beserta dengan CoreUtils nya Archana Berry.
+  - `/boot` untuk struktur bootable nya OS Archana Berry.
+  - `/etc` untuk kumpulan setelan konfigurasi yang tersimpan dan terstruktur.
   - `/archanaberry/` untuk layanan inti dan pengguna root sistem.  
   - `/home/(user)/` untuk pengguna, memastikan isolasi yang aman antar user.  
   - `/system/develop/` mendukung pengembang dengan library header C/C++/Rust bawaan.
@@ -36,16 +38,22 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `/lib` untuk kumpulan library dengan format kustom untuk Archana Berry.
   - `/system/app` untuk kumpulan aplikasi sistem bawaan GUI (.abp)
   - `/system/preference` untuk personalisasi tampilan nya Archana Berry.
+  - `/cache` untuk kumpulan file sementara baik log dmesg ataupun file temp (tmp).
   - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
 
 - **Dukungan Multibahasa**  
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
 
 - **Custom Library Formats**  
-  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.  
+  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.
+ 
+- **Archana Berry App Formats**
+ - `.abp` Archana Berry Program
+ - `.abpi` Archana Berry Installer
+ - `.xabp` Cross Archana Berry Program
 
 - **Dukungan Gaming**  
-  Archana Berry OS dirancang agar porting game, editing, dan aplikasi berbasis grafis menjadi lebih mudah.  
+  Archana Berry OS dirancang agar porting game, editing, dan aplikasi berbasis grafis menjadi lebih mudah dan ringan.  
 
 ---
 
@@ -55,8 +63,9 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 - **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV.  
 - **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan perlatan konmten kreator.
 - **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.
-- **Recovery**: Mempermudah pemulihan jika oOS kesulitan masuk karena masalah kritis.
+- **Recovery**: Mempermudah pemulihan jika OS kesulitan masuk karena masalah kritis.
 - **PSOD**: "Purple Screen Of Dead" Untuk mempermudah analisa kesalahan OS dengan GUI Framebuffer dan kode QR dmesg.
+- **Minimalist Memory Leak** Bebas kebocoran memory karena dasar OS nya menggunakan bahasa pemrograman **RUST**
 
 ---
 
