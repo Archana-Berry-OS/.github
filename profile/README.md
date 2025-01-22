@@ -45,7 +45,32 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
 
 - **Custom Library Formats**  
-  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, `abkl`, menghadirkan modularitas unik dengan performa optimal.
+  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, `abkl`,
+  1. **`.abdll`** - Archana Berry Dynamic Link Library  
+   - **MimeType:** `application/x.vnd.archanaberry-dylinklib`  
+   - Format library dynamic link yang memungkinkan pembaruan library tanpa perlu restart sistem. Cocok untuk aplikasi yang memerlukan modularitas tinggi.  
+
+2. **`.absll`** - Archana Berry Static Link Library  
+   - **MimeType:** `application/x.vnd.archanaberry-staticlinklib`  
+   - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis.  
+
+3. **`.abl`** - Archana Berry Libraries  
+   - **MimeType:** `application/x.vnd.archanaberry.libraries`  
+   - Format library umum yang digunakan untuk resource library inti sistem.  
+
+4. **`.abo`** - Archana Berry Object File  
+   - **MimeType:** `application/x.vnd.archanaberry-object`  
+   - File objek yang digunakan sebagai hasil intermediate dalam proses kompilasi.  
+
+5. **`.aboll`** - Archana Berry Object Link Library  
+   - **MimeType:** `application/x.vnd.archanaberry-oblinklib`  
+   - Digunakan untuk menghubungkan beberapa file objek dengan library lainnya, mendukung modularitas yang lebih tinggi.  
+
+6. **`.abkl`** - Archana Berry Kernel Library  
+   - **MimeType:** `application/x.vnd.archanaberry-kernel.libraries`  
+   - Format library khusus untuk modul kernel atau library sistem tingkat rendah.
+
+  * Menghadirkan modularitas library unik dengan performa jauh lebih optimal.
  
 - **Archana Berry App Formats**
 	- `.abp` Archana Berry Program Package **[application/vnd.archanaberry.program.package]**
