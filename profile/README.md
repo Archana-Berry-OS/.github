@@ -46,7 +46,8 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 - **Custom Library Formats**  
   - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, `abkl`,
-  1. **`.abdll`** - Archana Berry Dynamic Link Library  
+
+1. **`.abdll`** - Archana Berry Dynamic Link Library  
    - **MimeType:** `application/x.vnd.archanaberry-dylinklib`  
    - Format library dynamic link yang memungkinkan pembaruan library tanpa perlu restart sistem. Cocok untuk aplikasi yang memerlukan modularitas tinggi.  
 
