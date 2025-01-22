@@ -48,9 +48,9 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.
  
 - **Archana Berry App Formats**
-	- `.abp` Archana Berry Program Package
-	- `.abpi` Archana Berry Package Installer
-	- `.xabp` Cross Archana Berry Program Package
+	- `.abp` Archana Berry Program Package [application/vnd.archanaberry.package]
+	- `.abpi` Archana Berry Package Installer [application/vnd.archanaberry.package.installer]
+	- `.xabp` Cross Archana Berry Program Package [xapplication/vnd.archanaberry.crosspackage]
 
 - **Dukungan Gaming**  
   Archana Berry OS dirancang agar porting game, editing, dan aplikasi berbasis grafis menjadi lebih mudah dan ringan.  
