@@ -45,12 +45,12 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
 
 - **Custom Library Formats**  
-  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, dll, menghadirkan modularitas unik dengan performa optimal.
+  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, `abkl`, menghadirkan modularitas unik dengan performa optimal.
  
 - **Archana Berry App Formats**
-	- `.abp` Archana Berry Program Package [application/vnd.archanaberry.package]
-	- `.abpi` Archana Berry Package Installer [application/vnd.archanaberry.package.installer]
-	- `.xabp` Cross Archana Berry Program Package [xapplication/vnd.archanaberry.crosspackage]
+	- `.abp` Archana Berry Program Package **[application/vnd.archanaberry.program.package]**
+	- `.abpi` Archana Berry Package Installer **[application/vnd.archanaberry.package.installer]**
+	- `.xabp` Cross Archana Berry Program Package **[xapplication/vnd.archanaberry.crosspackage]**
 
 - **Dukungan Gaming**  
   Archana Berry OS dirancang agar porting game, editing, dan aplikasi berbasis grafis menjadi lebih mudah dan ringan.  
@@ -65,7 +65,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 - **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.
 - **Recovery**: Mempermudah pemulihan jika OS kesulitan masuk karena masalah kritis.
 - **PSOD**: "Purple Screen Of Dead" Untuk mempermudah analisa kesalahan OS dengan GUI Framebuffer dan kode QR dmesg.
-- **Minimalist Memory Leak** Bebas kebocoran memory karena dasar OS nya menggunakan bahasa pemrograman **RUST**
+- **No Memory Leak** Bebas kebocoran memory karena dasar OS nya menggunakan bahasa pemrograman **RUST**
 
 ---
 
