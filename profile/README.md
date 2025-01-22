@@ -53,7 +53,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 2. **`.absll`** - Archana Berry Static Link Library  
    - **MimeType:** `application/x.vnd.archanaberry-staticlinklib`  
-   - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis.  
+   - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis, cocok untuk pengembangan aplikasi lawas, dan aplikasi library tertentu.
 
 3. **`.abl`** - Archana Berry Libraries  
    - **MimeType:** `application/x.vnd.archanaberry.libraries`  
