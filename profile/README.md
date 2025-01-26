@@ -9,6 +9,9 @@
 
 ---
 
+## Maskot Archana Berry (BLUEBERRY CHAN)
+<img src="https://raw.githubusercontent.com/Archana-Berry-OS/.github/main/profile/archanaberry.png" alt="Archana Berry" width="500" />
+
 ## Deskripsi  
 **Archana Berry OS** adalah sistem operasi hobi (dibuat belajar) modern yang dirancang untuk memberikan efisiensi tinggi dan performa tinggi dengan fitur-fitur unggulan yang cocok untuk berbagai kebutuhan seperti profesional, kantor, konten kreator, gaming, server hosting, hingga penggunaan sehari-hari.  
 
