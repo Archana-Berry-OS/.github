@@ -28,21 +28,6 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 - **Bahasa Pemrograman Modern**  
   Dibangun menggunakan **Rust** untuk keamanan dan kecepatan, serta mendukung berbagai bahasa pemrograman (C, C++, Rust, bahkan Java/Kotlin, Swift, dll).  
-
-- **Sistem Berkas yang Terorganisir**
-  - `/sbin` untuk program aplikasi sistem biner nya beserta dengan CoreUtils nya Archana Berry.
-  - `/boot` untuk struktur bootable nya OS Archana Berry.
-  - `/etc` untuk kumpulan setelan konfigurasi yang tersimpan dan terstruktur.
-  - `/archanaberry/` untuk layanan inti dan pengguna root sistem.  
-  - `/home/(user)/` untuk pengguna, memastikan isolasi yang aman antar user.  
-  - `/system/develop/` mendukung pengembang dengan library header C/C++/Rust bawaan.
-  - `/system/base` untuk rollback dan cadangan sumber kode os dalam bentuk .abb (Archana Berry Backup file).
-  - `/system/driver` untuk kumpulan driver khusus Archana Berry (.abd).
-  - `/lib` untuk kumpulan library dengan format kustom untuk Archana Berry.
-  - `/system/app` untuk kumpulan aplikasi sistem bawaan GUI (.abp)
-  - `/system/preference` untuk personalisasi tampilan nya Archana Berry.
-  - `/cache` untuk kumpulan file sementara baik log dmesg ataupun file temp (tmp).
-  - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
  
 ### **Struktur Direktori OS Archana Berry**
 
