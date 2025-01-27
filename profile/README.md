@@ -48,9 +48,10 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 
 | **Jalur Direktori**      | **Deskripsi**                                                                                                                                                     |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) seperti `bsh`, `ls`, `cp`, dan lainnya.                                                                   |
+| **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) dari /sbin/archanaberry kemudian disymlink atau dipecah menjadi seperti `mv`, `ls`, `cp`, `touch` dan lainnya.                                                                   |
 | **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
-| **/etc**                | Direktori untuk konfigurasi sistem, termasuk `archanaberry.conf` untuk pengaturan subsistem, tweak, dan konfigurasi lainnya.                                     |
+| **/etc**                | Direktori untuk konfigurasi sistem, termasuk `archanaberry.conf` untuk pengaturan sistem, subsistem, tweak, dan konfigurasi lainnya.                                     |
+| **/etc/archanaberry**   | Direktori untuk konfigurasi setelan desktop, akun pengguna, serta tempat menyimpan sandi.                                     |
 | **/archanaberry/**      | Direktori untuk layanan inti dan pengguna root sistem.                                                                                                         |
 | **/home/(user)**        | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
 | **/system/develop**     | Mendukung pengembang dengan library header untuk C/C++/Rust, termasuk sumber kode di dalam folder `include` dan `src`.                                          |
@@ -66,6 +67,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/dev**                | Berisi file device untuk mengakses perangkat keras (block device, karakter device, dll).                                                                       |
 | **/var/temp**           | File sementara tambahan untuk kebutuhan sistem.                                                                                                                |
 | **/archanaberry/.userdata** | Direktori khusus untuk data pengguna root, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
+| **/home/(user)/.userdata** | Direktori khusus untuk data pengguna, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
 | **/etc/os-release**     | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
 
 - **Dukungan Multibahasa**  
