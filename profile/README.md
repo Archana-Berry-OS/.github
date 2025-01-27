@@ -43,6 +43,29 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `/system/preference` untuk personalisasi tampilan nya Archana Berry.
   - `/cache` untuk kumpulan file sementara baik log dmesg ataupun file temp (tmp).
   - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
+ 
+- **Tabel direktori beserta deskripsi nya**
+  | **Jalur Direktori**      | **Deskripsi**                                                                                                                                                     |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) seperti `bsh`, `ls`, `cp`, dan lainnya.                                                                   |
+| **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
+| **/etc**                | Direktori untuk konfigurasi sistem, termasuk `archanaberry.conf` untuk pengaturan subsistem, tweak, dan konfigurasi lainnya.                                     |
+| **/archanaberry/**      | Direktori untuk layanan inti dan pengguna root sistem.                                                                                                         |
+| **/home/(user)**        | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
+| **/system/develop**     | Mendukung pengembang dengan library header untuk C/C++/Rust, termasuk sumber kode di dalam folder `include` dan `src`.                                          |
+| **/system/base**        | Direktori rollback dan cadangan berupa file `.abb` (Archana Berry Backup File), seperti file mentah OS dan recovery tools.                                      |
+| **/system/driver**      | Kumpulan driver khusus untuk OS Archana Berry dengan format `.abd` seperti driver `keyboard.abd` dan `touchscreen.abd`.                                          |
+| **/lib**                | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, `.absll`, dan `.abo`.                                                                   |
+| **/system/app**         | Aplikasi sistem bawaan dengan format `.abp`, seperti `calculator.abp`, `filemanager.abp`, dan lainnya.                                                          |
+| **/system/preference**  | Direktori untuk personalisasi, berisi pengaturan tema, ikon, font, wallpaper, dan tampilan lainnya.                                                            |
+| **/cache**              | Direktori untuk file sementara (temp) dan log sistem seperti `dmesg`.                                                                                          |
+| **/mnt**                | Direktori untuk mounting storage seperti `usb0`, `cdrom`, dan lainnya.                                                                                         |
+| **/storage**            | Storage internal dan eksternal, termasuk `nvme0`, `sdcard0`, dan lainnya.                                                                                      |
+| **/proc**               | Sistem file virtual untuk informasi kernel dan proses yang sedang berjalan.                                                                                     |
+| **/dev**                | Berisi file device untuk mengakses perangkat keras (block device, karakter device, dll).                                                                       |
+| **/var/temp**           | File sementara tambahan untuk kebutuhan sistem.                                                                                                                |
+| **/archanaberry/.userdata** | Direktori khusus untuk data pengguna root, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
+| **/etc/os-release**     | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
 
 - **Dukungan Multibahasa**  
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
