@@ -44,8 +44,9 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `/cache` untuk kumpulan file sementara baik log dmesg ataupun file temp (tmp).
   - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
  
-- **Tabel direktori beserta deskripsi nya**
-  | **Jalur Direktori**      | **Deskripsi** |
+### **Struktur Direktori OS Archana Berry**
+
+| **Jalur Direktori**      | **Deskripsi**                                                                                                                                                     |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) seperti `bsh`, `ls`, `cp`, dan lainnya.                                                                   |
 | **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
