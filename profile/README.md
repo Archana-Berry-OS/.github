@@ -45,7 +45,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `/mnt` dan `/storage` untuk mounting dan storage yang ditautkan secara internal dan eksternal.
  
 - **Tabel direktori beserta deskripsi nya**
-  | **Jalur Direktori**      | **Deskripsi**                                                                                                                                                     |
+  | **Jalur Direktori**      | **Deskripsi** |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) seperti `bsh`, `ls`, `cp`, dan lainnya.                                                                   |
 | **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
