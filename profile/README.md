@@ -62,20 +62,20 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   - `.abdll`, `.absll`, `.abkm`, `abkl`,
 
 1. **`.abdll`** - Archana Berry Dynamic Link Library  
-   - **MimeType:** `application/x.vnd.archanaberry-dylinklib`  
+   - **MimeType:** `application/x.vnd.archanaberry-dylib`  
    - Format library dynamic link yang memungkinkan pembaruan library tanpa perlu restart sistem. Cocok untuk aplikasi yang memerlukan modularitas tinggi.  
 
 2. **`.absll`** - Archana Berry Static Link Library  
-   - **MimeType:** `application/x.vnd.archanaberry-staticlinklib`  
-   - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis, cocok untuk pengembangan aplikasi lawas, dan aplikasi library tertentu.
+   - **MimeType:** `application/x-vnd.archanaberry-staticlib`  
+   - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis, cocok untuk pengembangan aplikasi lawas, perubahan dinamis, dan aplikasi library tertentu, hanya saja perlu kompilasi ulang aplikasi.
 
 3. **`.abkm`** - Archana Berry Kernel Module
-   - **MimeType:** `application/x.vnd.archanaberry-kernel.module`
-   - Format library khusu kernel modul yang digunakan pada saat menjalankan sistem operasi di tingkat rendah
+   - **MimeType:** `application/x-vnd.archanaberry-kmod`
+   - Format library untuk ekstensi fitur kernel pada level rendah
 
 4. **`.abkl`** - Archana Berry Kernel Library  
-   - **MimeType:** `application/x.vnd.archanaberry-kernel.libraries`  
-   - Format library khusus untuk kernel library sistem tingkat rendah.
+   - **MimeType:** `application/x-vnd.archanaberry-klib`  
+   - Format library untuk library khusus dalam sistem kernel
 
   * Menghadirkan modularitas library unik dengan performa jauh lebih optimal.
  
