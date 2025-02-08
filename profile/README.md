@@ -27,7 +27,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   Dengan memanfaatkan *memory management* yang optimal, OS ini sangat cocok untuk. daily driver, gaming dan profesional.  
 
 - **Bahasa Pemrograman Modern**  
-  Dibangun menggunakan **Rust** untuk keamanan dan kecepatan, serta mendukung berbagai bahasa pemrograman (C, C++, Rust, bahkan Java/Kotlin, Swift, dll).  
+  Dibangun menggunakan **Rust** + **C** + **Assembly inline C** kombinasi untuk keamanan dan kecepatan serta efisiensi tinggi, serta mendukung aplikasi berbagai bahasa pemrograman (C, C++, Rust, bahkan Java/Kotlin, Swift, dll).  
  
 ### **Struktur Direktori OS Archana Berry**
 
@@ -54,6 +54,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/var/temp**           | File sementara tambahan untuk kebutuhan sistem.                                                                                                                |
 | **/archanaberry/.userdata** | Direktori khusus untuk data pengguna root, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
 | **/home/(user)/.userdata** | Direktori khusus untuk data pengguna, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
+| **/home/(user)/.bin**   | Direktori khusus untuk aplikasi biner pengguna dengan isolasi aman antar pengguna tertentu dan terpisah dari sistem dan pengguna lain (mirip sbin tetapi versi pengguna biasa).                                        |
 | **/etc/os-release**     | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
 
 - **Dukungan Multibahasa**  
