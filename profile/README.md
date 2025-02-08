@@ -35,7 +35,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) dari /sbin/archanaberry kemudian disymlink atau dipecah menjadi seperti `mv`, `ls`, `cp`, `touch` dan lainnya.                                                                   |
 | **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
-| **/etc**                | Direktori untuk konfigurasi sistem, termasuk `archanaberry.conf` untuk pengaturan sistem, subsistem, tweak, dan konfigurasi lainnya.                                     |
+| **/etc**                | Direktori untuk konfigurasi sistem untuk pengaturan sistem, subsistem, tweak, dan konfigurasi lainnya.                                     |
 | **/etc/useraccount**    | Direktori untuk konfigurasi setelan desktop, akun pengguna, serta tempat menyimpan sandi.                                     |
 | **/archanaberry/**      | Direktori untuk layanan inti dan pengguna root sistem.                                                                                                         |
 | **/home/(user)**        | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
@@ -44,7 +44,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/system/driver**      | Kumpulan driver khusus untuk OS Archana Berry dengan format `.abd` seperti driver `keyboard.abd` dan `touchscreen.abd`.                                          |
 | **/lib**                | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, dan `.absll`.                                                                   |
 | **/system/kernel**      | Partisi kernel termount dan berisi kernel modul (.abkm), dan kernel library (.abkl) dari partisi kedua.                                                                 || **/system/app**         | Aplikasi sistem bawaan dengan format `.abp`, seperti `calculator.abp`, `filemanager.abp`, dan lainnya.                                                          |
-| **/system/config**      | Konfigurasi sistem baik service, init, register, setelan, kernel, os, dll.                                                         |
+| **/system/config**      | Konfigurasi sistem baik service, init, register, setelan, kernel, os, startup, mounting, loader, dll.                                                         |
 | **/system/preference**  | Direktori untuk personalisasi, berisi pengaturan tema, ikon, font, wallpaper, dan tampilan lainnya.                                                            |
 | **/cache**              | Direktori untuk file sementara (temp) dan log sistem seperti `dmesg`.                                                                                          |
 | **/mnt**                | Direktori untuk mounting storage seperti `usb0`, `cdrom`, dan lainnya.                                                                                         |
@@ -56,6 +56,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/home/(user)/.userdata** | Direktori khusus untuk data pengguna, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                           |
 | **/home/(user)/.bin**   | Direktori khusus untuk aplikasi biner pengguna dengan isolasi aman antar pengguna tertentu dan terpisah dari sistem dan pengguna lain (mirip sbin tetapi versi pengguna biasa).                                        |
 | **/etc/os-release**     | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
+| **/system/preference/locale**     | File berisi bahasa sistem baik untuk CLI dan GUI nya.                                                                                              |
 
 - **Dukungan Multibahasa**  
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
