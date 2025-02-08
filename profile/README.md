@@ -59,7 +59,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
   Dengan file bahasa berbasis teks (`lang.id`, `lang.en`), memungkinkan personalisasi hingga ke level booting dan recovery hingga GUI.  
 
 - **Custom Library Formats**  
-  - `.abdll`, `.absll`, `.abl`, `.abo`, `aboll`, `abkl`,
+  - `.abdll`, `.absll`, `.abkm`, `abkl`,
 
 1. **`.abdll`** - Archana Berry Dynamic Link Library  
    - **MimeType:** `application/x.vnd.archanaberry-dylinklib`  
@@ -69,21 +69,13 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
    - **MimeType:** `application/x.vnd.archanaberry-staticlinklib`  
    - Format library static link yang digunakan untuk aplikasi atau tool yang tidak membutuhkan pembaruan library secara dinamis, cocok untuk pengembangan aplikasi lawas, dan aplikasi library tertentu.
 
-3. **`.abl`** - Archana Berry Libraries  
-   - **MimeType:** `application/x.vnd.archanaberry.libraries`  
-   - Format library umum yang digunakan untuk resource library inti sistem.  
+3. **`.abkm`** - Archana Berry Kernel Module
+   - **MimeType:** `application/x.vnd.archanaberry-kernel.module`
+   - Format library khusu kernel modul yang digunakan pada saat menjalankan sistem operasi di tingkat rendah
 
-4. **`.abo`** - Archana Berry Object File  
-   - **MimeType:** `application/x.vnd.archanaberry-object`  
-   - File objek yang digunakan sebagai hasil intermediate dalam proses kompilasi.  
-
-5. **`.aboll`** - Archana Berry Object Link Library  
-   - **MimeType:** `application/x.vnd.archanaberry-oblinklib`  
-   - Digunakan untuk menghubungkan beberapa file objek dengan library lainnya, mendukung modularitas yang lebih tinggi.  
-
-6. **`.abkl`** - Archana Berry Kernel Library  
+4. **`.abkl`** - Archana Berry Kernel Library  
    - **MimeType:** `application/x.vnd.archanaberry-kernel.libraries`  
-   - Format library khusus untuk modul kernel atau library sistem tingkat rendah.
+   - Format library khusus untuk kernel library sistem tingkat rendah.
 
   * Menghadirkan modularitas library unik dengan performa jauh lebih optimal.
  
