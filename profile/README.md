@@ -36,14 +36,15 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/sbin**               | Program biner untuk aplikasi sistem (CoreUtils utama) dari /sbin/archanaberry kemudian disymlink atau dipecah menjadi seperti `mv`, `ls`, `cp`, `touch` dan lainnya.                                                                   |
 | **/boot**               | Struktur bootable OS Archana Berry, berisi loader dan kernel.                                                                                                  |
 | **/etc**                | Direktori untuk konfigurasi sistem, termasuk `archanaberry.conf` untuk pengaturan sistem, subsistem, tweak, dan konfigurasi lainnya.                                     |
-| **/etc/archanaberry**   | Direktori untuk konfigurasi setelan desktop, akun pengguna, serta tempat menyimpan sandi.                                     |
+| **/etc/useraccount**    | Direktori untuk konfigurasi setelan desktop, akun pengguna, serta tempat menyimpan sandi.                                     |
 | **/archanaberry/**      | Direktori untuk layanan inti dan pengguna root sistem.                                                                                                         |
 | **/home/(user)**        | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
 | **/system/develop**     | Mendukung pengembang dengan library header untuk C/C++/Rust, termasuk sumber kode di dalam folder `include` dan `src`.                                          |
 | **/system/base**        | Direktori rollback dan cadangan berupa file `.abb` (Archana Berry Backup File), seperti file mentah OS dan recovery tools.                                      |
 | **/system/driver**      | Kumpulan driver khusus untuk OS Archana Berry dengan format `.abd` seperti driver `keyboard.abd` dan `touchscreen.abd`.                                          |
-| **/lib**                | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, `.absll`, dan `.abo`.                                                                   |
-| **/system/app**         | Aplikasi sistem bawaan dengan format `.abp`, seperti `calculator.abp`, `filemanager.abp`, dan lainnya.                                                          |
+| **/lib**                | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, dan `.absll`.                                                                   |
+| **/system/kernel**      | Partisi kernel termount dan berisi kernel modul (.abkm), dan kernel library (.abkl) dari partisi kedua.                                                                 || **/system/app**         | Aplikasi sistem bawaan dengan format `.abp`, seperti `calculator.abp`, `filemanager.abp`, dan lainnya.                                                          |
+| **/system/config**      | Konfigurasi sistem baik service, init, register, setelan, kernel, os, dll.                                                         |
 | **/system/preference**  | Direktori untuk personalisasi, berisi pengaturan tema, ikon, font, wallpaper, dan tampilan lainnya.                                                            |
 | **/cache**              | Direktori untuk file sementara (temp) dan log sistem seperti `dmesg`.                                                                                          |
 | **/mnt**                | Direktori untuk mounting storage seperti `usb0`, `cdrom`, dan lainnya.                                                                                         |
@@ -92,12 +93,13 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 ## Kelebihan  
 - **Minimalis dan Cepat**: Tanpa layanan rumit seperti banyak distribusi Linux.
 - **Modular**: Bisa menambahkan/mengurangi modul secara internal maupun eksternal dengan mudah.
-- **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV.  
+- **Fleksibel**: Bisa diporting ke Raspberry Pi, Orange Pi, hingga STB TV dan Android Phone.  
 - **Integrasi Modern**: Dukungan VTuber tools seperti Live2D/3D dan perlatan konmten kreator.
 - **Cocok untuk Pengembangan**: Direct support untuk pengembang dengan library bawaan.
 - **Recovery**: Mempermudah pemulihan jika OS kesulitan masuk karena masalah kritis.
 - **PSOD**: "Purple Screen Of Dead" Untuk mempermudah analisa kesalahan OS dengan GUI Framebuffer dan kode QR dmesg.
-- **No Memory Leak** Bebas kebocoran memory karena dasar OS nya menggunakan bahasa pemrograman **RUST**
+- **No Memory Leak** Bebas kebocoran memory karena dasar OS nya menggunakan bahasa pemrograman **RUST**.
+- **BerryX11**: Komposit mirip seperti X11 dan ini jauh lebih ringan dan bersih.
 
 ---
 
