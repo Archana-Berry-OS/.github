@@ -44,7 +44,6 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/home/(user)**                  | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
 | **/home/(user)/.bin**             | Direktori khusus untuk aplikasi biner pengguna dengan isolasi aman antar pengguna tertentu dan terpisah dari sistem dan pengguna lain (mirip sbin tetapi versi pengguna biasa). |
 | **/home/(user)/.userdata**        | Direktori khusus untuk data pengguna, berisi aplikasi yang sudah terinstal (`app`) dan data masing-masing aplikasi (`data`).                                 |
-| **/lib**                          | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, dan `.absll`.                                                                          |
 | **/mnt**                          | Direktori untuk mounting storage seperti `usb0`, `cdrom`, dan lainnya.                                                                                         |
 | **/proc**                         | Sistem file virtual untuk informasi kernel dan proses yang sedang berjalan.                                                                                     |
 | **/sbin**                         | Program biner untuk aplikasi sistem (CoreUtils utama) dari `/sbin/archanaberry` kemudian disymlink atau dipecah menjadi seperti `mv`, `ls`, `cp`, `touch`, dan lainnya. |
@@ -55,6 +54,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/system/develop**               | Mendukung pengembang dengan library header untuk C/C++/Rust, termasuk sumber kode di dalam folder `include` dan `src`.                                          |
 | **/system/driver**                | Kumpulan driver khusus untuk OS Archana Berry dengan format `.abd` seperti `keyboard.abd` dan `touchscreen.abd`.                                               |
 | **/system/kernel**                | Partisi kernel termount dan berisi kernel modul (`.abkm`), dan kernel library (`.abkl`) dari partisi kedua.                                                    |
+| **/system/lib**                   | Kumpulan library dengan format khusus Archana Berry, seperti `.abdll`, dan `.absll`.                                                                          |
 | **/system/preference**            | Direktori untuk personalisasi, berisi pengaturan tema, ikon, font, wallpaper, dan tampilan lainnya.                                                            |
 | **/system/preference/locale**     | File berisi bahasa sistem baik untuk CLI dan GUI-nya.                                                                                                          |
 | **/var/temp**                     | File sementara tambahan untuk kebutuhan sistem.                                                                                                                |
