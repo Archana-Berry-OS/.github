@@ -39,7 +39,6 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/cache**                        | Direktori untuk file sementara (temp) dan log sistem seperti `dmesg`.                                                                                          |
 | **/dev**                          | Berisi file device untuk mengakses perangkat keras (block device, karakter device, dll).                                                                       |
 | **/etc**                          | Direktori untuk konfigurasi sistem untuk pengaturan sistem, subsistem, tweak, dan konfigurasi lainnya.                                                         |
-| **/etc/os-release**               | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
 | **/etc/useraccount**              | Direktori untuk konfigurasi setelan desktop, akun pengguna, serta tempat menyimpan sandi.                                                                     |
 | **/home/(user)**                  | Direktori khusus untuk pengguna dengan isolasi aman antar pengguna, berisi data aplikasi dan konfigurasi personal.                                              |
 | **/home/(user)/.bin**             | Direktori khusus untuk aplikasi biner pengguna dengan isolasi aman antar pengguna tertentu dan terpisah dari sistem dan pengguna lain (mirip sbin tetapi versi pengguna biasa). |
@@ -51,6 +50,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, modular**, ser
 | **/system/app**                   | Aplikasi sistem bawaan dengan format `.abp`, seperti `calculator.abp`, `filemanager.abp`, dan lainnya.                                                          |
 | **/system/base**                  | Direktori rollback dan cadangan berupa file `.abb` (Archana Berry Backup File), seperti file mentah OS dan recovery tools.                                      |
 | **/system/config**                | Konfigurasi sistem baik service, init, register, setelan, kernel, OS, startup, mounting, loader, dll.                                                         |
+| **/system/config/os-release**     | File berisi informasi nama OS, rilisan, dan versi Archana Berry.                                                                                               |
 | **/system/develop**               | Mendukung pengembang dengan library header untuk C/C++/Rust, termasuk sumber kode di dalam folder `include` dan `src`.                                          |
 | **/system/driver**                | Kumpulan driver khusus untuk OS Archana Berry dengan format `.abd` seperti `keyboard.abd` dan `touchscreen.abd`.                                               |
 | **/system/kernel**                | Partisi kernel termount dan berisi kernel modul (`.abkm`), dan kernel library (`.abkl`) dari partisi kedua.                                                    |
