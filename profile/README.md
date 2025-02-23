@@ -210,6 +210,7 @@ Untuk pertanyaan atau dukungan, silakan buat *issue* di GitHub atau hubungi kami
   - **.abkl:** Library kernel (setara .ko) untuk fungsi inti kernel.
 
 - **Loader dan Penamaan Dinamis:**  
-  - Loader di user space terdapat di `/system/lib/libarchanaberry32.abdll` dan `/system/lib/libarchanaberry64.abdll`, sedangkan loader untuk kernel space ada di `/system/lib/libsysarchanaberry32.abdll` dan `/system/lib/libsysarchanaberry64.abdll`.  
+  - Loader di userspace terdapat di `/system/lib/libarchanaberry32.abdll` dan `/system/lib/libarchanaberry64.abdll`,
+  - Loader untuk kernelspace ada di `/system/lib/libsysarchanaberry32.abdll` dan `/system/lib/libsysarchanaberry64.abdll`.  
   - Penamaan untu library dinamis menggunakan prefix seperti "libab", "libberry", "libarchanaberry" untuk bagian userspace 
   - Penamaan untuk library kernelspace menggunakan nama prefiks seperti "libabk", "libberryk", "libsys".
