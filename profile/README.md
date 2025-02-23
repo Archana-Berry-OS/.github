@@ -187,18 +187,19 @@ Untuk pertanyaan atau dukungan, silakan buat *issue* di GitHub atau hubungi kami
 ---
 
 **Slogan:**  
+"Sistem Operasi yang Fleksibel dan Andal."
 "A Flexible and Reliable Operating System."
 
 ---
 
-## Ringkasan Eksekusi & Pengembangan Aplikasi
+## Note 
 
 - **Aplikasi Native (BEFB):**  
-  - Format biner BEFB dijalankan secara native melalui ABBL, tanpa runtime, cocok untuk layanan inti dan aplikasi CLI.  
+  - Format biner BEFB dijalankan secara native melalui ABBL, tanpa runtime ABRT, cocok untuk layanan inti dan aplikasi CLI (aplikasi yang ditulis dalam Rust, C, C++).  
 
 - **Aplikasi Runtime (ABP, XABP, ABPI):**  
   - Dijalankan melalui ABRT (Runtime Native Space) yang mendukung AOT/JIT, sehingga memberikan fleksibilitas dan kinerja tinggi.  
-  - ABP untuk aplikasi native yang terkompilasi (misalnya, aplikasi yang ditulis dalam Rust, C, C++).  
+  - ABP untuk aplikasi native yang terkompilasi (aplikasi yang ditulis dalam Rust, C, C++).  
   - XABP untuk aplikasi berbasis skrip (seperti aplikasi menggunakan ABS, JavaScript, atau TypeScript) yang dapat berjalan melalui interpreter atau dengan kompilasi runtime.  
   - ABPI sebagai paket instalasi yang mempermudah penambahan modul, driver, atau framework ke sistem.
 
@@ -210,10 +211,5 @@ Untuk pertanyaan atau dukungan, silakan buat *issue* di GitHub atau hubungi kami
 
 - **Loader dan Penamaan Dinamis:**  
   - Loader di user space terdapat di `/system/lib/libarchanaberry32.abdll` dan `/system/lib/libarchanaberry64.abdll`, sedangkan loader untuk kernel space ada di `/system/lib/libsysarchanaberry32.abdll` dan `/system/lib/libsysarchanaberry64.abdll`.  
-  - Penamaan dinamis library menggunakan prefix seperti "libab", "libberry", "libarchanaberry" untuk user space dan "libabk", "libberryk", "libsys" untuk kernel space.
-
----
-
-Dengan struktur dan fitur inovatif ini, **Archana Berry OS** membawa pendekatan baru dalam pengembangan sistem operasi yang menggabungkan fleksibilitas, keamanan, modularitas, dan performa tinggi. Sistem ini mengadopsi prinsip-prinsip Unix, tetapi menghadirkan format dan mekanisme eksekusi yang sepenuhnya kustom—dengan dukungan untuk berbagai bahasa pemrograman dan kompatibilitas lintas platform melalui subsistem yang terintegrasi.
-
-Mari bergabung dan kembangkan bersama kami menuju sistem operasi masa depan yang revolusioner!
+  - Penamaan untu library dinamis menggunakan prefix seperti "libab", "libberry", "libarchanaberry" untuk bagian userspace 
+  - Penamaan untuk library kernelspace menggunakan nama prefiks seperti "libabk", "libberryk", "libsys".
