@@ -1,4 +1,4 @@
-# Archana Berry OS  
+# Archana Berry OS - "Sistem Operasi yang Fleksibel dan Andal."  
 **Proyek sistem operasi hobi berbasis Unix Kustom (Unix-Like) yang ringan, fleksibel, terintegrasi, dan memiliki modularitas tinggi.**
 
 <img src="https://raw.githubusercontent.com/Archana-Berry-OS/.github/main/profile/orglogo.png" alt="Logo Archana Berry Organization" width="200" />
@@ -30,7 +30,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, dan modular**,
   untuk memudahkan pengelolaan aplikasi baik melalui antarmuka GUI maupun melalui terminal.
 
 - **Fokus pada Efisiensi dan Performa Tinggi:**  
-  Dengan manajemen memori yang optimal dan eksekusi biner native melalui format **BEFB (Berry Executable File Binary)**, OS ini sangat cocok sebagai daily driver, untuk gaming, dan aplikasi profesional.
+  Dengan manajemen memori yang optimal dan eksekusi biner native melalui format **BEFB (Berry Executable File Binary)** dan penanganan Kernel Space dan Sistem menggunakan RNS (Runtime Native Space) di ABRT (Archana Berry RunTime), OS ini sangat cocok sebagai daily driver, untuk gaming, pengembangan pemula hingga berlanjut, dan aplikasi profesional.
 
 - **Bahasa Pemrograman Modern:**  
   Dibangun menggunakan kombinasi **Rust, C, dan Assembly**, sehingga menjamin keamanan tinggi (tanpa memory leak) serta kecepatan eksekusi yang optimal. OS ini juga mendukung pengembangan aplikasi dalam berbagai bahasa seperti C, C++, , Assembly, Rust, Java, Kotlin, Python, JavaScript, dan TypeScript melalui runtime khusus.
@@ -44,11 +44,11 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, dan modular**,
 - **Eksekusi Berlapis:**  
   OS ini membagi ruang eksekusinya menjadi tiga lapisan:
   1. **Kernel Space:** Tempat eksekusi inti OS, driver, dan modul-modul kernel.  
-  2. **Runtime Native Space (RNS):** Lapisan penghubung yang dikelola oleh **ABRT (Archana Berry Runtime)**, yang secara cerdas menangani eksekusi aplikasi—baik native (BEFB) maupun aplikasi runtime (ABP, XABP, ABPI)—dengan dukungan JIT dan AOT.  
+  2. **Runtime Native Space (RNS):** Lapisan penghubung yang dikelola oleh **ABRT (Archana Berry Runtime)**, yang secara cerdas menangani eksekusi aplikasi—baik native (BEFB) maupun aplikasi runtime (ABP, XABP, ABPI)—dengan dukungan JIT dan AOT. 
   3. **User Space:** Tempat aplikasi biasa dijalankan, terpisah secara ketat agar tidak mengganggu sistem inti.
 
 - **Keamanan Terintegrasi:**  
-  Dengan menggunakan **SEUNRA (Security Enchanted Unique for Native and Runtime + AppArmor)**, OS ini memiliki mekanisme keamanan canggih yang mengamankan library sensitif di user space dan kernel space, serta menyediakan isolasi melalui **BerrySandbox**.
+  Dengan menggunakan **SEUNRA (Security Enchanted Unique for Native and Runtime + AppArmor) mirip SELinux dengan gabungan AppArmor**, OS ini memiliki mekanisme keamanan canggih yang mengamankan library sensitif di user space dan kernel space, serta menyediakan isolasi melalui **BerrySandbox**.
 
 - **Dukungan Multiplatform dan Subsistem:**  
   Melalui subsistem seperti:  
