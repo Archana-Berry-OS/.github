@@ -33,7 +33,7 @@ Sistem operasi ini dibangun dengan filosofi **ringkas, fleksibel, dan modular**,
   Dengan manajemen memori yang optimal dan eksekusi biner native melalui format **BEFB (Berry Executable File Binary)**, OS ini sangat cocok sebagai daily driver, untuk gaming, dan aplikasi profesional.
 
 - **Bahasa Pemrograman Modern:**  
-  Dibangun menggunakan kombinasi **Rust, C, dan Assembly**, sehingga menjamin keamanan tinggi (tanpa memory leak) serta kecepatan eksekusi yang optimal. OS ini juga mendukung pengembangan aplikasi dalam berbagai bahasa seperti C, C++, Rust, Java, Kotlin, Python, JavaScript, dan TypeScript melalui runtime khusus.
+  Dibangun menggunakan kombinasi **Rust, C, dan Assembly**, sehingga menjamin keamanan tinggi (tanpa memory leak) serta kecepatan eksekusi yang optimal. OS ini juga mendukung pengembangan aplikasi dalam berbagai bahasa seperti C, C++, , Assembly, Rust, Java, Kotlin, Python, JavaScript, dan TypeScript melalui runtime khusus.
 
 - **Struktur dan Format Library Kustom:**  
   - **.abdll:** Archana Berry Dynamic Link Library, untuk linking dinamis di user space.  
@@ -195,11 +195,11 @@ Untuk pertanyaan atau dukungan, silakan buat *issue* di GitHub atau hubungi kami
 ## Note 
 
 - **Aplikasi Native (BEFB):**  
-  - Format biner BEFB dijalankan secara native melalui ABBL, tanpa runtime ABRT, cocok untuk layanan inti dan aplikasi CLI (aplikasi yang ditulis dalam Rust, C, C++).  
+  - Format biner BEFB dijalankan secara native melalui ABBL, tanpa runtime ABRT, cocok untuk layanan inti dan aplikasi CLI (aplikasi yang ditulis dalam Rust, C, C++, Assembly).  
 
 - **Aplikasi Runtime (ABP, XABP, ABPI):**  
   - Dijalankan melalui ABRT (Runtime Native Space) yang mendukung AOT/JIT, sehingga memberikan fleksibilitas dan kinerja tinggi.  
-  - ABP untuk aplikasi native yang terkompilasi (aplikasi yang ditulis dalam Rust, C, C++).  
+  - ABP untuk aplikasi native yang terkompilasi (aplikasi yang ditulis dalam Rust, C, C++, Assembly).  
   - XABP untuk aplikasi berbasis skrip (seperti aplikasi menggunakan ABS, JavaScript, atau TypeScript) yang dapat berjalan melalui interpreter atau dengan kompilasi runtime.  
   - ABPI sebagai paket instalasi yang mempermudah penambahan modul, driver, atau framework ke sistem.
 
